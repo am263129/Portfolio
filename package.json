@@ -1,4 +1,5 @@
 {
+	"homepage": "http://King-Mufasa.github.io/Portfolio",
 	"name": "developer-portfolio",
 	"version": "1.0.0",
 	"description": "Software Developer Portfolio Template built with react.js bootstrap that helps you showcase your work and skills as a software developer.",
@@ -8,9 +9,10 @@
 	"license": "MIT",
 	"scripts": {
 		"dev": "next dev",
-		"build": "next build",
+		"build": "next build && next export",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"deploy": "gh-pages -d out"
 	},
 	"dependencies": {
 		"@apollo/client": "^3.3.21",
@@ -36,10 +38,11 @@
 		"react-scripts": "^4.0.3",
 		"react-typist": "^2.0.5",
 		"reactstrap": "^8.9.0",
-		"sharp": "^0.29.1"
+		"sharp": "^0.29.2"
 	},
 	"devDependencies": {
 		"eslint": "7.32.0",
-		"eslint-config-next": "11.1.2"
+		"eslint-config-next": "11.1.2",
+		"gh-pages": "^3.2.3"
 	}
 }
